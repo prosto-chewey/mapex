@@ -549,8 +549,8 @@ class PgDbMock(SqlDbMock):
 
     def __init__(self):
         super().__init__()
-        self.up_script = "framework/pg-up.sql"
-        self.down_script = "framework/pg-down.sql"
+        self.up_script = "tests/framework/pg-up.sql"
+        self.down_script = "tests/framework/pg-down.sql"
 
 
 class MyDbMock(SqlDbMock):
@@ -567,8 +567,8 @@ class MyDbMock(SqlDbMock):
 
     def __init__(self):
         super().__init__()
-        self.up_script = "framework/my-up.sql"
-        self.down_script = "framework/my-down.sql"
+        self.up_script = "tests/framework/my-up.sql"
+        self.down_script = "tests/framework/my-down.sql"
 
 
 class MsDbMock(SqlDbMock):
@@ -585,8 +585,8 @@ class MsDbMock(SqlDbMock):
 
     def __init__(self):
         super().__init__()
-        self.up_script = "framework/ms-up.sql"
-        self.down_script = "framework/ms-down.sql"
+        self.up_script = "tests/framework/ms-up.sql"
+        self.down_script = "tests/framework/ms-down.sql"
 
 
 class MongoDbMock(NoSqlDbMock):
